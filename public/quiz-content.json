@@ -1,6 +1,6 @@
 {
   "project": "Road Agêntica: como preparar sua rotina para IA",
-  "version": "v1.0",
+  "version": "v1.1",
   "purpose": "Quiz didático e diagnóstico para abrir a cabeça de lideranças Road sobre contexto, rotina, critério, governança e uso prático do Roadzinho/IA.",
   "principles": [
     "Alternativas não devem ser obviamente erradas; devem gerar dúvida real.",
@@ -12,27 +12,27 @@
   "levels": [
     {
       "name": "Explorador",
-      "min": 0,
-      "max": 39,
-      "description": "Está curioso, mas ainda tende a pensar IA como ferramenta, atalho ou pedido solto."
+      "min": 18,
+      "max": 35,
+      "description": "Está curioso e já enxerga usos possíveis, mas ainda mistura IA com atalho, ferramenta ou pedido solto. Próximo passo: transformar uma rotina real em input, output e critério."
     },
     {
       "name": "Organizador",
-      "min": 40,
-      "max": 64,
-      "description": "Já percebe que rotina, contexto e fonte importam, mas ainda precisa transformar isso em padrão."
+      "min": 36,
+      "max": 49,
+      "description": "Já entende que contexto e rotina importam, mas ainda precisa transformar isso em padrão repetível. Próximo passo: documentar fonte, dono, frequência e exemplo bom."
     },
     {
       "name": "Orquestrador",
-      "min": 65,
-      "max": 84,
-      "description": "Consegue pensar em input, output, critério, risco e formato antes de acionar IA."
+      "min": 50,
+      "max": 62,
+      "description": "Consegue pensar em rotina, fonte, risco, validação e formato antes de acionar IA. Próximo passo: escolher um piloto pequeno e medir ganho em 30 dias."
     },
     {
       "name": "Líder Agêntico",
-      "min": 85,
-      "max": 100,
-      "description": "Pensa IA como camada de inteligência operacional, com governança e aplicação prática."
+      "min": 63,
+      "max": 72,
+      "description": "Pensa IA como camada de inteligência operacional, com contexto, governança e aplicação prática. Próximo passo: ajudar a área a virar rotina em skill, piloto ou cron com humano no loop."
     }
   ],
   "dimensions": {
@@ -54,24 +54,24 @@
       "question": "Qual é o primeiro cuidado para esse novo funcionário não virar uma máquina de retrabalho?",
       "options": [
         {
-          "text": "Dar uma tarefa pequena e ver como ele se vira, ajustando depois pelo resultado.",
-          "score": 55,
-          "feedback": "Funciona para testar, mas se faltar contexto mínimo o teste pode medir confusão, não potencial."
+          "text": "Dar uma tarefa pequena, observar o resultado e ajustar o caminho depois.",
+          "score": 2,
+          "feedback": "Teste rápido ajuda, mas pode medir falta de contexto em vez de potencial real."
         },
         {
-          "text": "Explicar a rotina, o objetivo, os exemplos bons e os erros que não podem acontecer.",
-          "score": 100,
-          "feedback": "Esse é o centro da lógica agêntica: rotina + contexto + critério antes de execução."
+          "text": "Explicar rotina, objetivo, exemplos e riscos.",
+          "score": 4,
+          "feedback": "Esse é o ponto: IA precisa de contexto e régua antes de velocidade."
         },
         {
-          "text": "Colocar alguém experiente para revisar tudo que ele fizer até ganhar confiança.",
-          "score": 75,
-          "feedback": "Revisão é essencial, mas sem contexto inicial vira gargalo. O ideal é orientar antes e revisar depois."
+          "text": "Colocar alguém experiente revisando tudo no começo.",
+          "score": 3,
+          "feedback": "Revisão é útil, mas não substitui orientação inicial clara."
         },
         {
-          "text": "Deixar ele observar reuniões e conversas por alguns dias antes de pedir entregas relevantes.",
-          "score": 80,
-          "feedback": "Boa visão de contexto. Só precisa virar instrução operacional, não apenas observação solta."
+          "text": "Deixar observar reuniões antes de pedir algo relevante.",
+          "score": 3,
+          "feedback": "Boa forma de absorver contexto, desde que vire instrução prática."
         }
       ]
     },
@@ -85,24 +85,24 @@
       "question": "Qual pedido tende a gerar melhor resultado?",
       "options": [
         {
-          "text": "Melhore esse relatório e deixe mais estratégico.",
-          "score": 45,
-          "feedback": "É um pedido comum, mas ainda aberto demais. A IA pode melhorar forma sem entender decisão."
+          "text": "Melhore este relatório e deixe mais estratégico.",
+          "score": 1,
+          "feedback": "É um pedido comum, mas aberto demais para orientar decisão."
         },
         {
-          "text": "Revise este relatório procurando erro de período, KPI sem fonte, insight genérico e próximos passos fracos.",
-          "score": 100,
-          "feedback": "Aqui existe critério. A IA sabe o que procurar e a liderança consegue validar."
+          "text": "Fazer versão mais curta para cliente executivo, preservando os pontos principais.",
+          "score": 2,
+          "feedback": "Já tem direção, mas ainda falta régua do que manter, cortar ou provar."
         },
         {
-          "text": "Faça uma análise como se fosse um diretor da área olhando esse relatório.",
-          "score": 65,
-          "feedback": "Ajuda no enquadramento, mas ainda depende de saber qual é a régua da Road e do cliente."
+          "text": "Checar período, fonte, tese e próximos passos.",
+          "score": 4,
+          "feedback": "Aqui existe critério de revisão e fica mais fácil validar a resposta."
         },
         {
-          "text": "Transforme esse relatório em uma versão mais curta para cliente executivo.",
-          "score": 70,
-          "feedback": "É mais claro que 'melhore', mas ainda precisa de objetivo, público e critérios do que cortar/manter."
+          "text": "Analise como diretor da área olhando para esse cliente.",
+          "score": 3,
+          "feedback": "Ajuda no enquadramento, mas pode virar opinião sem fonte e limite."
         }
       ]
     },
@@ -116,24 +116,24 @@
       "question": "Qual pergunta deveria vir antes?",
       "options": [
         {
-          "text": "Quais tarefas da área são recorrentes, têm entrada clara, saída esperada e erro comum?",
-          "score": 100,
-          "feedback": "Perfeito. Agente maduro nasce de rotina clara, não de vontade abstrata."
+          "text": "Qual ferramenta a área prefere usar no dia a dia?",
+          "score": 1,
+          "feedback": "Adoção importa, mas ferramenta antes de rotina costuma gerar uso raso."
         },
         {
-          "text": "Qual ferramenta de IA a área prefere usar no dia a dia?",
-          "score": 50,
-          "feedback": "Adoção importa, mas ferramenta antes de rotina costuma gerar uso superficial."
+          "text": "Quem teria tempo para falar com o agente diariamente?",
+          "score": 2,
+          "feedback": "Boa preocupação operacional, mas ainda não define a rotina a resolver."
         },
         {
-          "text": "Quem da área teria tempo para conversar com esse agente todos os dias?",
-          "score": 65,
-          "feedback": "Boa preocupação de adoção, mas ainda falta definir que rotina o agente resolveria."
+          "text": "Qual canal e personalidade deixariam o agente mais usado?",
+          "score": 2,
+          "feedback": "Pode ajudar depois, mas não resolve função, fonte e critério."
         },
         {
-          "text": "Qual seria o nome, personalidade e canal desse agente?",
-          "score": 35,
-          "feedback": "Pode ajudar depois, mas identidade sem rotina vira personagem sem função operacional."
+          "text": "Que tarefas são recorrentes, claras e têm erro comum?",
+          "score": 4,
+          "feedback": "Agente maduro nasce de rotina repetível, não de desejo abstrato."
         }
       ]
     },
@@ -147,24 +147,24 @@
       "question": "Qual pacote de contexto tende a produzir a resposta mais útil?",
       "options": [
         {
-          "text": "Nome do cliente, área responsável e um pedido bem escrito.",
-          "score": 55,
-          "feedback": "É um começo, mas ainda falta fonte, objetivo, histórico e critério."
+          "text": "Fonte, objetivo, público, restrições e exemplo.",
+          "score": 4,
+          "feedback": "Esse pacote reduz ambiguidade e aproxima a IA de apoio operacional."
         },
         {
-          "text": "Arquivo, objetivo, público da entrega, restrições, exemplo bom e quem valida.",
-          "score": 100,
-          "feedback": "Esse pacote reduz ambiguidade e transforma o Roadzinho em apoio real, não só redator."
+          "text": "Nome do cliente, área responsável, contexto recente e pedido bem escrito.",
+          "score": 2,
+          "feedback": "É um bom começo, mas ainda falta critério e fonte oficial."
         },
         {
-          "text": "Todos os arquivos disponíveis da área, para ele decidir o que é relevante.",
-          "score": 60,
-          "feedback": "Volume ajuda só se houver mapa e fonte oficial. Muito arquivo sem curadoria também confunde."
+          "text": "Todos os arquivos da área para a IA escolher o que usar.",
+          "score": 2,
+          "feedback": "Volume sem curadoria pode confundir tanto quanto ajudar."
         },
         {
-          "text": "Uma explicação verbal detalhada no chat, mesmo sem fonte anexada.",
-          "score": 70,
-          "feedback": "Ajuda bastante, mas para decisões e relatórios a fonte real ainda precisa aparecer."
+          "text": "Uma explicação detalhada no chat, mesmo sem anexo.",
+          "score": 3,
+          "feedback": "Ajuda no raciocínio, mas decisão relevante precisa de fonte rastreável."
         }
       ]
     },
@@ -178,24 +178,24 @@
       "question": "Qual desses itens costuma ser mais esquecido quando alguém pede ajuda para IA?",
       "options": [
         {
-          "text": "O arquivo ou print que a IA precisa ler.",
-          "score": 55,
-          "feedback": "Às vezes falta, mas muita gente lembra do arquivo. O problema costuma estar na régua de uso."
+          "text": "O arquivo, print ou histórico que a IA deveria analisar antes de responder.",
+          "score": 2,
+          "feedback": "Muita gente lembra do arquivo. O gargalo costuma estar no uso dele."
         },
         {
-          "text": "O objetivo da entrega e como saber se ela ficou boa.",
-          "score": 100,
-          "feedback": "Exato. Sem objetivo e critério, a IA pode entregar algo bonito e inútil."
+          "text": "O prazo final e a urgência da tarefa.",
+          "score": 2,
+          "feedback": "Prazo ajuda prioridade, mas não define qualidade da entrega."
         },
         {
-          "text": "O nome do cliente ou da área envolvida.",
-          "score": 45,
-          "feedback": "É importante, mas normalmente é o dado mais fácil de lembrar."
+          "text": "Objetivo da entrega e régua de qualidade.",
+          "score": 4,
+          "feedback": "Sem objetivo e régua, a IA pode entregar algo bonito e pouco útil."
         },
         {
-          "text": "O prazo final da tarefa.",
-          "score": 60,
-          "feedback": "Prazo importa para prioridade, mas não garante qualidade do raciocínio."
+          "text": "O nome do cliente e a área responsável.",
+          "score": 1,
+          "feedback": "É necessário, mas costuma ser o dado mais fácil de lembrar."
         }
       ]
     },
@@ -209,24 +209,24 @@
       "question": "Antes de usar uma planilha como base recorrente para IA, o que faz mais sentido?",
       "options": [
         {
-          "text": "Pedir para a IA ler tudo e encontrar os padrões automaticamente.",
-          "score": 55,
-          "feedback": "Ela pode ajudar a mapear, mas não devemos pular validação de fonte, aba e cálculo."
+          "text": "Pedir para a IA ler tudo e apontar padrões.",
+          "score": 2,
+          "feedback": "Pode ajudar no mapeamento, mas não substitui validação da fonte."
         },
         {
-          "text": "Montar um mapa da fonte: abas, colunas, período, dono, fórmulas e perguntas de validação.",
-          "score": 100,
-          "feedback": "Esse é o caminho seguro. Primeiro mapear, depois automatizar."
+          "text": "Usar a aba principal, validando com a pessoa que atualiza a fonte.",
+          "score": 1,
+          "feedback": "Pode estar certa, mas precisa ser comprovada antes de virar base."
         },
         {
-          "text": "Usar apenas a aba principal, porque geralmente é a mais atualizada.",
-          "score": 50,
-          "feedback": "Pode ser verdade, mas precisa ser validado. Aba principal também pode esconder exceções."
+          "text": "Exportar em PDF para preservar a planilha original.",
+          "score": 2,
+          "feedback": "Reduz risco de edição, mas não resolve fórmula, período e coluna."
         },
         {
-          "text": "Exportar para PDF para evitar que a IA altere qualquer coisa.",
-          "score": 65,
-          "feedback": "Ajuda em segurança, mas não resolve granularidade, cálculo e fonte oficial."
+          "text": "Mapear abas, colunas, período e dono.",
+          "score": 4,
+          "feedback": "Primeiro mapa da fonte, depois automação. Esse é o caminho seguro."
         }
       ]
     },
@@ -240,24 +240,24 @@
       "question": "Qual rotina parece melhor candidata para virar skill primeiro?",
       "options": [
         {
-          "text": "Gerar ideias criativas livres para uma campanha especial e única.",
-          "score": 45,
-          "feedback": "Pode usar IA, mas talvez não precise de skill. É mais exploratório e pontual."
+          "text": "Ideias livres para uma campanha única.",
+          "score": 1,
+          "feedback": "Pode usar IA, mas é pontual demais para virar skill primeiro."
         },
         {
-          "text": "Revisar briefings antes de irem para criação, checando objetivo, público, formato e mensagem.",
-          "score": 100,
-          "feedback": "Boa candidata: recorrente, com critério e impacto direto em retrabalho."
+          "text": "Revisão recorrente de briefing com critérios claros.",
+          "score": 4,
+          "feedback": "Boa candidata: frequente, avaliável e reduz retrabalho."
         },
         {
-          "text": "Responder uma dúvida específica de cliente que apareceu uma vez no grupo.",
-          "score": 35,
-          "feedback": "Pode ser uma resposta pontual. Skill exige recorrência ou padrão reutilizável."
+          "text": "Resposta a uma dúvida isolada que apareceu no grupo.",
+          "score": 1,
+          "feedback": "Pode ser resolvida pontualmente, sem criar procedimento."
         },
         {
-          "text": "Ajudar em brainstorms estratégicos quando o time estiver sem repertório.",
-          "score": 70,
-          "feedback": "Pode virar skill se houver método, entradas e critérios. Sem isso, fica genérico."
+          "text": "Brainstorm estratégico quando o time ficar sem repertório.",
+          "score": 3,
+          "feedback": "Pode virar skill se houver método, entradas e critérios."
         }
       ]
     },
@@ -271,24 +271,24 @@
       "question": "Qual descrição está mais pronta para virar piloto?",
       "options": [
         {
-          "text": "Quero que a IA ajude minha área a ser mais produtiva.",
-          "score": 35,
-          "feedback": "É uma intenção boa, mas ainda ampla demais para piloto."
+          "text": "Ajudar minha área a ser mais produtiva.",
+          "score": 1,
+          "feedback": "Boa intenção, mas escopo amplo demais para piloto."
         },
         {
-          "text": "Toda sexta, consolidar pendências abertas por cliente e sugerir prioridade para a weekly.",
-          "score": 100,
-          "feedback": "Ótimo. Tem frequência, objeto, saída e uso claro."
+          "text": "Ler materiais da área e trazer insights úteis.",
+          "score": 2,
+          "feedback": "Pode explorar oportunidades, mas falta pergunta e saída esperada."
         },
         {
-          "text": "A IA poderia participar mais das conversas e ajudar quando achasse necessário.",
-          "score": 55,
-          "feedback": "Pode ser futuro, mas o gatilho está vago. O sistema precisa saber quando agir."
+          "text": "Entrar nas conversas da área e ajudar quando houver sinais de atraso ou ruído.",
+          "score": 2,
+          "feedback": "O gatilho está vago. O sistema precisa saber quando agir."
         },
         {
-          "text": "Quero que a IA leia os materiais da área e traga insights úteis.",
-          "score": 60,
-          "feedback": "Pode funcionar como exploração, mas ainda falta tipo de material, pergunta e formato de saída."
+          "text": "Consolidar pendências toda sexta.",
+          "score": 4,
+          "feedback": "Tem frequência, objeto, saída e uso claro em reunião."
         }
       ]
     },
@@ -302,24 +302,24 @@
       "question": "Qual caminho costuma ser mais saudável?",
       "options": [
         {
-          "text": "Fazer uma automação pequena e descobrir as regras conforme ela erra.",
-          "score": 55,
-          "feedback": "Pode acelerar aprendizado, mas traz risco se o erro tocar cliente ou dado sensível."
+          "text": "Mapear rotina, testar checklist V0 e só depois automatizar.",
+          "score": 4,
+          "feedback": "Aprender manualmente antes reduz risco e revela exceções reais."
         },
         {
-          "text": "Pedir para a pessoa explicar tudo em uma reunião e já transformar em agente.",
-          "score": 60,
-          "feedback": "A entrevista ajuda, mas uma reunião raramente captura todas as exceções."
+          "text": "Automatizar pequeno e descobrir as regras pelos erros.",
+          "score": 2,
+          "feedback": "Pode ensinar rápido, mas é arriscado se tocar cliente ou dado sensível."
         },
         {
-          "text": "Mapear a rotina, criar checklist/template V0, testar com humano e só depois virar skill/cron.",
-          "score": 100,
-          "feedback": "Esse é o caminho mais robusto: aprender manualmente antes de automatizar."
+          "text": "Fazer uma reunião longa, registrar exceções e já transformar em agente inicial.",
+          "score": 2,
+          "feedback": "Entrevista ajuda, mas uma reunião raramente captura exceções."
         },
         {
           "text": "Esperar a rotina ficar perfeita antes de envolver IA.",
-          "score": 50,
-          "feedback": "Perfeição trava. O ideal é piloto controlado, não automação cega nem espera infinita."
+          "score": 1,
+          "feedback": "Perfeição trava. Melhor piloto controlado do que espera infinita."
         }
       ]
     },
@@ -333,24 +333,24 @@
       "question": "Qual pedido ajuda mais o Roadzinho a revisar uma entrega?",
       "options": [
         {
-          "text": "Deixe essa apresentação mais executiva e com cara de Road.",
-          "score": 65,
-          "feedback": "É útil, mas ainda subjetivo. Precisa de critérios de executivo e Road."
+          "text": "Deixar a apresentação mais executiva, objetiva e com cara de Road.",
+          "score": 2,
+          "feedback": "É útil, mas “executiva” ainda pode significar coisas diferentes."
         },
         {
-          "text": "Revise se a apresentação tem tese clara, dados com fonte, próximos passos e leitura rápida para diretoria.",
-          "score": 100,
-          "feedback": "Aqui existe régua. A IA sabe o que avaliar."
+          "text": "Reescreva em tom profissional e reduza o texto.",
+          "score": 2,
+          "feedback": "Melhora forma, mas pode perder estratégia sem objetivo."
         },
         {
-          "text": "Veja se você acha essa apresentação boa o suficiente para enviar.",
-          "score": 50,
-          "feedback": "Pode dar opinião, mas sem régua vira gosto do modelo."
+          "text": "Checar tese, fonte e próximos passos.",
+          "score": 4,
+          "feedback": "A régua está explícita. A IA sabe o que avaliar."
         },
         {
-          "text": "Reescreva tudo em tom profissional e reduza o texto.",
-          "score": 70,
-          "feedback": "Ajuda na forma, mas pode perder estratégia se não houver objetivo e público."
+          "text": "Veja se esta apresentação já está boa para enviar.",
+          "score": 1,
+          "feedback": "Sem critério, a resposta vira gosto do modelo."
         }
       ]
     },
@@ -364,24 +364,24 @@
       "question": "Se você quer padronizar relatórios da área, qual insumo mais acelera a qualidade?",
       "options": [
         {
-          "text": "Um relatório antigo considerado muito bom, com explicação do porquê ele funcionou.",
-          "score": 100,
-          "feedback": "Excelente. Exemplo bom + motivo cria régua replicável."
+          "text": "Lista de tópicos obrigatórios do relatório, com ordem e objetivo de cada bloco.",
+          "score": 3,
+          "feedback": "Ajuda estrutura, mas pode virar preenchimento mecânico."
         },
         {
-          "text": "Uma lista de tópicos que todo relatório precisa ter.",
-          "score": 75,
-          "feedback": "Ajuda, mas lista sem exemplo pode virar preenchimento mecânico."
+          "text": "Relatório bom com explicação do porquê funcionou.",
+          "score": 4,
+          "feedback": "Exemplo bom com motivo cria padrão replicável."
         },
         {
-          "text": "Um arquivo com todos os relatórios já enviados para clientes.",
-          "score": 65,
-          "feedback": "Volume ajuda se houver curadoria. Misturar bons e ruins sem rótulo confunde."
+          "text": "Todos os relatórios já enviados para clientes.",
+          "score": 2,
+          "feedback": "Volume ajuda só se houver curadoria de bons e ruins."
         },
         {
-          "text": "Uma descrição geral do estilo que a liderança prefere.",
-          "score": 55,
-          "feedback": "Preferência ajuda, mas padrão operacional precisa de critério observável."
+          "text": "Uma descrição geral do estilo preferido pela liderança.",
+          "score": 2,
+          "feedback": "Preferência ajuda, mas padrão precisa de evidência observável."
         }
       ]
     },
@@ -395,24 +395,24 @@
       "question": "Qual formato de resposta é mais confiável?",
       "options": [
         {
-          "text": "Minha opinião é que o cliente está em risco porque a comunicação parece desalinhada.",
-          "score": 45,
-          "feedback": "Pode ser um alerta, mas está pouco evidenciado."
+          "text": "Minha opinião é que o cliente está em risco.",
+          "score": 1,
+          "feedback": "Pode ser alerta, mas ainda não mostra base nem evidência."
         },
         {
-          "text": "Fato observado, evidência/fonte, interpretação e próximo passo sugerido.",
-          "score": 100,
-          "feedback": "Esse formato separa dado, leitura e ação. É a base de confiança."
+          "text": "Resumo dos principais pontos positivos e negativos.",
+          "score": 2,
+          "feedback": "É útil, mas pode misturar fato, opinião e recomendação."
         },
         {
-          "text": "Um resumo objetivo com os principais pontos positivos e negativos.",
-          "score": 70,
-          "feedback": "É útil, mas pode misturar evidência e opinião se não houver separação."
+          "text": "Uma recomendação direta para ganhar tempo da liderança.",
+          "score": 3,
+          "feedback": "Recomendação é valiosa, mas precisa vir com base verificável."
         },
         {
-          "text": "Uma recomendação direta para economizar tempo da liderança.",
-          "score": 65,
-          "feedback": "Liderança precisa de recomendação, mas em tema sensível ela deve vir com base."
+          "text": "Fato observado, fonte, interpretação e próximo passo.",
+          "score": 4,
+          "feedback": "Esse formato separa dado, leitura e ação. Gera confiança."
         }
       ]
     },
@@ -426,24 +426,24 @@
       "question": "Uma rotina está acontecendo toda semana, mas ainda tem muita exceção e julgamento humano. Melhor próximo passo:",
       "options": [
         {
-          "text": "Criar um cron para rodar toda semana e depois corrigir exceções.",
-          "score": 50,
-          "feedback": "Pode virar ruído. Exceção demais pede mais aprendizagem antes de recorrência automática."
+          "text": "Criar checklist/template e testar casos reais.",
+          "score": 4,
+          "feedback": "Estabiliza padrão antes de subir para skill, cron ou agente."
         },
         {
-          "text": "Criar checklist/template, testar em 2 ou 3 casos e documentar exceções.",
-          "score": 100,
-          "feedback": "Boa. Primeiro estabiliza o padrão, depois sobe complexidade."
+          "text": "Criar um cron semanal e corrigir exceções depois.",
+          "score": 1,
+          "feedback": "Exceção demais costuma transformar cron em ruído recorrente."
         },
         {
-          "text": "Criar um agente especialista que pergunte quando tiver dúvida.",
-          "score": 70,
-          "feedback": "Pode ser futuro, mas ainda é mais complexo do que o necessário para validar padrão."
+          "text": "Criar um agente especialista que pergunte quando tiver dúvida ou exceção.",
+          "score": 3,
+          "feedback": "Pode ser futuro, mas talvez seja complexo cedo demais."
         },
         {
-          "text": "Manter 100% humano até a rotina deixar de ter exceções.",
-          "score": 55,
-          "feedback": "Exceções sempre existirão. O ideal é IA assistida, não automação plena nem espera total."
+          "text": "Manter 100% humano até acabarem as exceções.",
+          "score": 2,
+          "feedback": "Seguro, mas pode travar aprendizado. Exceções sempre existirão."
         }
       ]
     },
@@ -457,24 +457,24 @@
       "question": "Antes de criar um cron de relatório semanal, qual pergunta é mais importante?",
       "options": [
         {
-          "text": "Qual horário tem maior chance de a pessoa abrir?",
-          "score": 65,
-          "feedback": "Importa para adoção, mas não é a pergunta principal."
+          "text": "Qual horário aumenta a chance de abertura?",
+          "score": 2,
+          "feedback": "Importa para adoção, mas não garante utilidade."
         },
         {
-          "text": "Quem é dono de agir sobre esse relatório e qual decisão ele apoia?",
-          "score": 100,
-          "feedback": "Sem dono e decisão, cron vira barulho organizado."
+          "text": "Como deixar o relatório curto e visual?",
+          "score": 2,
+          "feedback": "Forma ajuda, mas não define ação nem responsável."
         },
         {
-          "text": "Como deixar o relatório mais bonito e curto?",
-          "score": 55,
-          "feedback": "Forma ajuda, mas não resolve falta de ação e responsabilidade."
+          "text": "Quem age sobre isso e qual decisão o alerta apoia?",
+          "score": 4,
+          "feedback": "Sem dono e decisão, recorrência vira barulho organizado."
         },
         {
-          "text": "Quantas métricas conseguimos incluir automaticamente?",
-          "score": 45,
-          "feedback": "Mais métrica não significa melhor decisão. Pode virar sobrecarga."
+          "text": "Quantas métricas conseguimos puxar automaticamente?",
+          "score": 1,
+          "feedback": "Mais métrica pode aumentar ruído, não clareza."
         }
       ]
     },
@@ -488,24 +488,24 @@
       "question": "Qual uso é mais seguro para uma rotina sensível?",
       "options": [
         {
-          "text": "IA prepara síntese, riscos e recomendação; responsável humano valida antes de qualquer ação externa.",
-          "score": 100,
-          "feedback": "Esse é o padrão certo: velocidade com governança."
+          "text": "IA executa sozinha quando a confiança estiver alta.",
+          "score": 1,
+          "feedback": "Em rotina sensível, confiança do sistema não basta."
         },
         {
-          "text": "IA executa automaticamente se a confiança do sistema estiver alta.",
-          "score": 45,
-          "feedback": "Pode ser possível em tarefas objetivas, mas em decisão sensível é cedo e arriscado."
+          "text": "IA só entra depois que o humano já decidiu.",
+          "score": 2,
+          "feedback": "É seguro, mas limita o valor da IA antes da decisão."
         },
         {
-          "text": "IA só pode ser usada depois que a decisão humana já foi tomada.",
-          "score": 60,
-          "feedback": "Seguro, mas limita valor. A IA pode ajudar antes, desde que não decida sozinha."
+          "text": "IA rascunha resposta externa e alguém ajusta se notar erro.",
+          "score": 3,
+          "feedback": "Pode funcionar em baixo risco, mas validação precisa ser explícita."
         },
         {
-          "text": "IA faz a primeira resposta para ganhar tempo, e a pessoa ajusta se perceber algo errado.",
-          "score": 70,
-          "feedback": "Pode funcionar em baixo risco, mas para externo/sensível a validação precisa ser explícita."
+          "text": "IA prepara síntese e riscos; humano valida antes de agir.",
+          "score": 4,
+          "feedback": "Velocidade com governança. Esse é o padrão mais seguro."
         }
       ]
     },
@@ -519,24 +519,24 @@
       "question": "Qual piloto parece mais saudável para primeira onda?",
       "options": [
         {
-          "text": "Um agente autônomo para gerir toda a área de ponta a ponta.",
-          "score": 35,
+          "text": "Um agente autônomo para gerir toda a área de ponta a ponta, começando pelos casos mais comuns.",
+          "score": 1,
           "feedback": "É chamativo, mas grande demais para primeira onda."
         },
         {
-          "text": "Uma revisão assistida de briefings ou reports com checklist e exemplos bons/ruins.",
-          "score": 100,
-          "feedback": "Ótimo piloto: recorrente, controlado e com valor claro."
+          "text": "Automatizar indicadores até o PPT final.",
+          "score": 2,
+          "feedback": "Pode ser futuro, mas depende de fonte e padrão maduros."
         },
         {
-          "text": "Uma automação completa de todos os indicadores do cliente até o PPT final.",
-          "score": 60,
-          "feedback": "Pode ser futuro, mas depende de fonte, padrão e validação maduros."
+          "text": "Um chatbot para qualquer pergunta da área.",
+          "score": 2,
+          "feedback": "Escopo amplo demais para medir ganho com segurança."
         },
         {
-          "text": "Um chatbot para responder qualquer pergunta da área.",
-          "score": 55,
-          "feedback": "Pode ajudar, mas 'qualquer pergunta' é escopo amplo demais para medir resultado."
+          "text": "Revisão assistida de briefing/report.",
+          "score": 4,
+          "feedback": "Piloto frequente, controlado e com valor perceptível."
         }
       ]
     },
@@ -550,24 +550,24 @@
       "question": "Qual pedido está mais pronto para execução?",
       "options": [
         {
-          "text": "Roadzinho, me ajuda com esse cliente porque a reunião é amanhã.",
-          "score": 40,
-          "feedback": "Mostra urgência, mas não diz objetivo, fonte ou saída."
+          "text": "Me ajuda com esse cliente, a reunião é amanhã.",
+          "score": 1,
+          "feedback": "Mostra urgência, mas não dá fonte, tarefa nem saída."
         },
         {
-          "text": "Roadzinho, leia este status do cliente, identifique riscos, pendências sem dono e próximos passos para a reunião de amanhã.",
-          "score": 100,
-          "feedback": "Tem fonte, tarefa, critérios e uso. Muito melhor."
+          "text": "Pense como CEO e diga o que faria com o cliente.",
+          "score": 2,
+          "feedback": "Pode abrir visão, mas sem fonte vira opinião solta."
         },
         {
-          "text": "Roadzinho, pense como CEO e me diga o que você faria com esse cliente.",
-          "score": 65,
-          "feedback": "Pode gerar perspectiva, mas precisa de fonte e limites para não virar opinião solta."
+          "text": "Transformar tudo que temos do cliente em um resumo estratégico para discussão interna.",
+          "score": 3,
+          "feedback": "Pode ajudar, mas “tudo” precisa de recorte e fonte oficial."
         },
         {
-          "text": "Roadzinho, transforme tudo que temos desse cliente em um resumo estratégico.",
-          "score": 70,
-          "feedback": "Pode ser útil, mas 'tudo que temos' precisa de recorte e fonte oficial."
+          "text": "Ler o status e apontar riscos, donos e próximos passos.",
+          "score": 4,
+          "feedback": "Tem fonte, tarefa, critério e uso na reunião."
         }
       ]
     },
@@ -581,24 +581,24 @@
       "question": "Qual contribuição da liderança é mais valiosa nesse momento?",
       "options": [
         {
-          "text": "Aprender comandos avançados para operar a ferramenta sem depender de ninguém.",
-          "score": 55,
-          "feedback": "Pode ajudar alguns perfis, mas não é o mais importante para adoção ampla."
+          "text": "Aprender comandos avançados da ferramenta.",
+          "score": 2,
+          "feedback": "Pode ajudar alguns perfis, mas não é o centro da liderança."
         },
         {
-          "text": "Trazer rotinas reais, exemplos bons/ruins, erros comuns e critérios de qualidade.",
-          "score": 100,
-          "feedback": "Esse é o ouro. A IA precisa do conhecimento operacional da liderança."
-        },
-        {
-          "text": "Pedir para o time testar livremente e ver o que aparece.",
-          "score": 60,
+          "text": "Pedir testes livres ao time e ver o que aparece.",
+          "score": 2,
           "feedback": "Exploração ajuda, mas sem direção vira dispersão."
         },
         {
-          "text": "Listar todos os processos da área e tentar automatizar o máximo possível.",
-          "score": 50,
+          "text": "Listar processos da área e priorizar os que parecem mais automatizáveis.",
+          "score": 1,
           "feedback": "Mapear é bom. Automatizar tudo de cara é risco."
+        },
+        {
+          "text": "Trazer rotinas, exemplos, erros e critérios.",
+          "score": 4,
+          "feedback": "Esse é o insumo que só a liderança consegue fornecer bem."
         }
       ]
     },
@@ -624,5 +624,19 @@
       "placeholder": "Ex: fonte oficial, exemplo de entrega boa, erros que não podem passar, público da entrega, prazo, restrições...",
       "openScoreRubric": "Alta qualidade: menciona fonte/contexto/critério/exemplo/erro. Média: lista insumos úteis mas incompletos. Baixa: resposta vaga."
     }
-  ]
+  ],
+  "scoreModel": {
+    "type": "sum_total",
+    "choice_questions": 18,
+    "min_points": 18,
+    "max_points": 72,
+    "per_choice_scores": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "open_questions": "qualitative_only",
+    "note": "Perguntas abertas alimentam análise qualitativa e escolha de pilotos, mas não entram automaticamente no score total."
+  }
 }
