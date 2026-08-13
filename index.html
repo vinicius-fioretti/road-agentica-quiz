@@ -97,7 +97,7 @@ function choose(i){
   $('feedback').innerHTML=`<b>${o.score>=4?'Boa leitura.':o.score>=3?'Bom caminho, com ajuste.':'Atenção ao raciocínio.'}</b><br>${o.feedback}`;
   $('feedback').classList.add('show');
   const best=q.options.reduce((b,x)=>x.score>b.score?x:b,q.options[0]); answers[idx]={id:q.id,type:q.type,dimension:q.dimension,question:q.question,answer:o.text,score:o.score,feedback:o.feedback,correctAnswer:best.text,correctFeedback:best.feedback};
-  setTimeout(()=>{next()},3000)
+  setTimeout(()=>{next()},4000)
 }
 function saveOpen(){
   const q=qs[idx]; const val=$('open').value.trim();
