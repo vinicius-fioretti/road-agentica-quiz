@@ -22,7 +22,7 @@
     .map{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:28px}.node{padding:18px;border:1px solid rgba(255,255,255,.1);border-radius:22px;background:rgba(255,255,255,.045);min-height:122px}.node b{display:block;color:#fff;margin-bottom:8px}.node span{color:var(--muted);font-size:13px}.node.active{border-color:var(--mag);box-shadow:0 0 42px rgba(229,73,136,.16)}
     .card{border:1px solid var(--line);border-radius:30px;background:linear-gradient(180deg,rgba(28,18,44,.9),rgba(14,9,23,.88));box-shadow:0 32px 90px rgba(0,0,0,.35);padding:30px;position:relative;overflow:hidden}.card:before{content:"// ROAD AGÊNTICA";position:absolute;right:22px;top:18px;color:rgba(255,255,255,.08);font-weight:900;letter-spacing:.2em}.act{color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:900;margin-bottom:18px}.title{font-size:32px;line-height:1.06;margin:0 0 12px}.context{font-size:17px;line-height:1.6;color:var(--muted);border-left:3px solid var(--mag);padding-left:16px;margin:18px 0 24px}.question{font-size:20px;font-weight:850;line-height:1.35;margin:20px 0}.answers{display:grid;gap:12px}.answer{width:100%;text-align:left;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:16px 18px;color:#fff;font-size:15px;line-height:1.35;cursor:pointer;transition:.18s}.answer:hover{border-color:rgba(229,73,136,.65);transform:translateY(-1px);background:rgba(229,73,136,.09)}.answer.chosen{border-color:var(--gold);background:rgba(255,209,102,.09)}
     textarea{width:100%;min-height:145px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:#fff;padding:16px;font:inherit;resize:vertical;outline:none}textarea:focus{border-color:var(--mag)}
-    .feedback{display:none;margin-top:20px;padding:20px;border-radius:20px;background:rgba(229,73,136,.09);border:1px solid rgba(229,73,136,.28);color:#f7eefa;line-height:1.55}.feedback.show{display:block}.feedback b{color:var(--gold)}.nav{display:flex;justify-content:space-between;gap:12px;margin-top:24px}.pill{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);color:var(--muted);font-size:13px}.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}.metric{padding:18px;border-radius:20px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1)}.metric strong{font-size:34px;color:var(--gold)}.small{color:var(--muted);font-size:14px;line-height:1.45}.dim{height:9px;background:rgba(255,255,255,.08);border-radius:999px;margin:8px 0 14px;overflow:hidden}.dim i{display:block;height:100%;background:linear-gradient(90deg,var(--mag),var(--purple));width:40%}pre{white-space:pre-wrap;background:#07040b;border:1px solid rgba(255,255,255,.1);padding:14px;border-radius:14px;color:#d8cde6;max-height:280px;overflow:auto}.footer-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.hidden{display:none!important}
+    .feedback{display:none;margin-top:20px;padding:20px;border-radius:20px;background:rgba(229,73,136,.09);border:1px solid rgba(229,73,136,.28);color:#f7eefa;line-height:1.55}.feedback.show{display:block}.feedback b{color:var(--gold)}.nav{display:flex;justify-content:space-between;gap:12px;margin-top:24px}.pill{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);color:var(--muted);font-size:13px}.result-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}.metric{padding:18px;border-radius:20px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1)}.metric strong{font-size:34px;color:var(--gold)}.small{color:var(--muted);font-size:14px;line-height:1.45}.dim{height:9px;background:rgba(255,255,255,.08);border-radius:999px;margin:8px 0 14px;overflow:hidden}.dim i{display:block;height:100%;background:linear-gradient(90deg,var(--mag),var(--purple));width:40%}.comparison{grid-column:1/-1;padding:20px;border-radius:22px;background:rgba(229,73,136,.08);border:1px solid rgba(229,73,136,.28)}.comparison h3{margin:0 0 10px;color:#ffd166}.compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0}.compare-card{padding:14px;border-radius:16px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1)}.compare-card b{color:#fff}.compare-card strong{display:block;margin-top:6px;font-size:22px;color:#ffd166}.comparison ul{margin:8px 0 0;padding-left:18px}.comparison li{margin:5px 0;color:var(--muted);line-height:1.45}pre{white-space:pre-wrap;background:#07040b;border:1px solid rgba(255,255,255,.1);padding:14px;border-radius:14px;color:#d8cde6;max-height:280px;overflow:auto}.footer-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.hidden{display:none!important}
     @media(max-width:720px){.glyphs{display:none}.top{padding:12px}.result-grid{grid-template-columns:1fr}.card{padding:22px}.title{font-size:26px}.hero h1{font-size:42px}}
   </style>
 </head>
@@ -127,22 +127,40 @@ function finish(){
   $('resultGrid').innerHTML=Object.entries(DATA.dimensions).map(([k,label])=>{
     const v=avg(dims[k]||[]); const pct=v?Math.round((v/4)*100):0;
     return `<div class="metric"><div class="small">${label}</div><strong>${v?`${v}/4`:'—'}</strong><div class="dim"><i style="width:${pct}%"></i></div></div>`
-  }).join('') + dimensionDiagnostics(dims);
+  }).join('') + dimensionDiagnostics(dims, sc, r);
   $('openAnswers').textContent=answers.filter(a=>a.type==='open').map(a=>`${a.question}\n${a.answer||'(sem resposta)'}`).join('\n\n');
   show('result');
   $('submissionBox').innerHTML='<b>Resultado local ainda não registrado.</b><br>Para concluir, clique no botão abaixo. A página de confirmação oficial abrirá nesta mesma aba. Sem essa confirmação, a resposta não entra na base.';
 }
 
-function dimensionDiagnostics(dims){
+function buildLocalComparisonNotice(score, resultRank){
+  return `<div class="comparison">
+    <h3>Comparativo de evolução</h3>
+    <div class="compare-grid">
+      <div class="compare-card"><b>Quiz 1</b><span class="small"> será buscado na base oficial pelo mesmo e-mail @road.ag após o registro.</span></div>
+      <div class="compare-card"><b>Quiz 2</b><strong>${resultRank.name} · ${score}/${maxScore()} pontos</strong></div>
+    </div>
+    <p class="small"><b>O que você verá na confirmação e no e-mail:</b></p>
+    <ul>
+      <li>perfil dos dois quizzes</li>
+      <li>nota dos dois quizzes</li>
+      <li>o que avançou</li>
+      <li>o que merece ponto de atenção</li>
+    </ul>
+    <p class="small"><b>Por segurança:</b> o webapp não embute a base V1 pública no HTML. O comparativo individual completo aparece depois do registro oficial.</p>
+  </div>`;
+}
+
+function dimensionDiagnostics(dims, sc, r){
   const labels={mindset:'mentalidade',context:'contexto e fonte',routine:'rotina',quality:'critério de qualidade',governance:'governança e gate',application:'aplicação prática'};
   const avgs=Object.entries(dims).map(([k,v])=>[k,avg(v||[])]).filter(x=>x[1]);
   const strong=avgs.filter(x=>x[1]>=3).map(x=>labels[x[0]]).slice(0,3);
   const improve=avgs.filter(x=>x[1]<3).sort((a,b)=>a[1]-b[1]).map(x=>labels[x[0]]).slice(0,3);
   let html='<div class="metric" style="grid-column:1/-1"><h3>Diagnóstico individual</h3>';
-  html+='<p class="small"><b>Comparabilidade:</b> esta V2 usa a mesma escala do V1: 18 perguntas fechadas, 1 a 4 pontos, máximo 72. A comparação oficial V1 x V2 será feita pelo e-mail @road.ag na base de respostas.</p>';
+  html+='<p class="small"><b>Comparabilidade:</b> esta V2 usa a mesma escala do V1: 18 perguntas fechadas, 1 a 4 pontos, máximo 72.</p>';
   if(strong.length) html+='<p class="small"><b>Onde você mostrou mais maturidade agora:</b> '+strong.join(', ')+'.</p>';
   if(improve.length) html+='<p class="small"><b>Onde estudar/praticar mais:</b> '+improve.join(', ')+'.</p>';
-  html+='<p class="small"><b>Como ler sua evolução:</b> se sua nota geral não subir muito, ainda pode haver avanço por dimensão. O diagnóstico pós-reunião vai comparar nota geral, perfil e dimensões contra o V1.</p></div>';
+  html+='</div>' + buildLocalComparisonNotice(sc, r);
   return html;
 }
 
